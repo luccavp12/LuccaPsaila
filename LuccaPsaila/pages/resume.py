@@ -10,7 +10,6 @@ def resume():
             src="/resume.jpg",
             width="50%",
             height="100%",
-            # border_radius="full",
         ),
         rx.button(
             "Download Resume PDF",

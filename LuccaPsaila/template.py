@@ -16,9 +16,6 @@ def template(
             height="4em",
         ),
         page(),
-        # rx.hstack(
-        #     # rx.container(page(), widht="100%"),
-        # ),
         footer(),
         width="100%",
     )

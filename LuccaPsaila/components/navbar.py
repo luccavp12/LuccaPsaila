@@ -6,8 +6,43 @@ def navbar():
             rx.heading("Lucca Psaila", font_size="2em"),
             marginRight="1em"
         ),
-        # rx.hstack(*[rx.button(name, on_click=lambda: rx.navigate(f"/{name.lower()}")) for name in ["Home", "Resume", "Projects"]]),
-        rx.hstack(*[rx.link(name, href=f"/{name.lower()}", color="black", marginRight="1em") for name in ["Home", "Resume", "Projects"]]),
+        rx.hstack(
+            rx.link(
+                "Home",
+                href="/",
+                color="black",
+                marginRight="1em",
+            ),
+            rx.link(
+                "Resume",
+                href="/resume",
+                color="black",
+                marginRight="1em",
+            ),
+            rx.menu.root(
+                rx.menu.trigger(
+                    rx.link(
+                        "Projects",
+                        href="/projects",
+                        color="black",
+                        marginRight="1em",
+                    ),
+                ),
+                rx.menu.content(
+                    rx.menu.item(
+                        rx.link(
+                            "MailAI",
+                            href="/MailAI",
+                            color="black",
+                            marginRight="1em",
+                        ),
+                    ),
+                    rx.menu.item("Project 2"),
+                    rx.menu.item("Project 3"),
+                    width="10rem",
+                ),
+            ),
+        ),
         position="fixed",
         top="0px",
         background_color="white",
