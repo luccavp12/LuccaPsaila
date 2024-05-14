@@ -31,8 +31,8 @@ def navbar():
                 rx.menu.content(
                     rx.menu.item(
                         rx.link(
-                            "MailAI",
-                            href="/MailAI",
+                            "OrganizeAI",
+                            href="/OrganizeAI",
                             color="black",
                             marginRight="1em",
                         ),

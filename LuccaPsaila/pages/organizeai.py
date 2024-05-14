@@ -1,14 +1,29 @@
 import reflex as rx
 from ..template import template
 
-@rx.page(route="/MailAI")
+@rx.page(route="/OrganizeAI")
 @template
-def mailai():
-    """The MailAI project page."""
+def organizeai():
+    """The OrganizeAI project page."""
     return rx.box(
         rx.flex(
             rx.box(
-                rx.heading("Mail AI", font_size="2em", marginBottom="0.5em"),
+                rx.flex(
+                    rx.heading("OrganizeAI", font_size="2em"),
+                    rx.link(
+                        "Google Workspace Marketplace",
+                        href="https://workspace.google.com/marketplace/search/?host=gmail",  # Add your project link here
+                        target="_blank",
+                        color="blue",
+                        trim="end",
+                        # marginTop="1em",
+                        # marginBottom="1em",
+                    ),
+                    direction="row",
+                    gap="1em",
+                    alignItems="center",
+                    marginBottom="1em",
+                ),
                 rx.text(
                     "Use GSuite AI automation to streamline your business workflow.",
                     font_size="1em",
@@ -23,11 +38,22 @@ def mailai():
                     rx.list.item("Designed a user-friendly interface using Google Workspace UI components, ensuring a seamless user experience."),
                     rx.list.item("Published the add-on on the Google Workspace Marketplace, allowing users to easily install and access the tool."),
                 ),
-                rx.link(
-                    "Google Workspace Marketplace",
-                    href="https://workspace.google.com/marketplace/search/?host=gmail",  # Add your project link here
-                    target="_blank",
-                    color="blue",
+                rx.flex(
+                    rx.text(
+                        "Built in Google Apps Script",
+                        font_size="1em",
+                        color="black",
+                        marginBottom="0.5em",
+                        marginTop="1em",
+                        fontWeight="bold",
+                    ),
+                    rx.chakra.image(
+                        src="/organizeAI.jpg",
+                        width="40vw",
+                        # height="200px",
+                        # border_radius="full",
+                    ),
+                    direction="column",
                 ),
             ),
             direction="column",

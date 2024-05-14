@@ -14,12 +14,14 @@ def projects():
                 rx.heading(
                     rx.link(
                         "OrganizeAI",
-                        href="/MailAI",
+                        href="/OrganizeAI",
                         color="black",
                         marginRight="2em",
                         marginBottom="0.5em",
                     ),
-                    font_size="2em", marginBottom="0.5em"),
+                    font_size="2em",
+                    marginBottom="0.5em"
+                ),
                 rx.text(
                     "Use GSuite AI automation to streamline your business workflow.",
                     font_size="1em",
@@ -34,7 +36,17 @@ def projects():
                 ),
             ),
             rx.box(
-                rx.heading("QandA Market", font_size="2em", marginBottom="0.5em"),
+                rx.heading(
+                    rx.link(
+                        "Qanda Market",
+                        href="/QandAMarket",
+                        color="black",
+                        marginRight="2em",
+                        marginBottom="0.5em",
+                    ),
+                    font_size="2em",
+                    marginBottom="0.5em"
+                ),
                 rx.text(
                     "Instantly book appointments with experts from around the world.",
                     font_size="1em",
@@ -49,7 +61,17 @@ def projects():
                 ),
             ),
             rx.box(
-                rx.heading("ChatVac", font_size="2em", marginBottom="0.5em"),
+                rx.heading(
+                    rx.link(
+                        "ChatVac",
+                        href="/ChatVac",
+                        color="black",
+                        marginRight="2em",
+                        marginBottom="0.5em",
+                    ),
+                    font_size="2em",
+                    marginBottom="0.5em"
+                ),
                 rx.text(
                     "One place for all your messages.",
                     font_size="1em",
