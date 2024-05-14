@@ -3,7 +3,7 @@ import reflex as rx
 def navbar():
     return rx.hstack(
         rx.hstack(
-            rx.heading("Lucca Psaila", font_size="2em"),
+            rx.heading("Lucca Psaila", font_size="min(5vw, 35px)"),
             marginRight="1em"
         ),
         rx.hstack(
@@ -37,8 +37,22 @@ def navbar():
                             marginRight="1em",
                         ),
                     ),
-                    rx.menu.item("Project 2"),
-                    rx.menu.item("Project 3"),
+                    rx.menu.item(
+                        rx.link(
+                            "QandA Market",
+                            href="/QandAMarket",
+                            color="black",
+                            marginRight="1em",
+                        ),
+                    ),
+                    rx.menu.item(
+                        rx.link(
+                            "ChatVac",
+                            href="/ChatVac",
+                            color="black",
+                            marginRight="1em",
+                        ),
+                    ),
                     width="10rem",
                 ),
             ),

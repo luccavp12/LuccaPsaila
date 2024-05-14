@@ -6,8 +6,33 @@ from ..template import template
 def projects():
     """The projects page."""
     return rx.box(
-        rx.heading("My Projects", fontSize="3em", color="black"),
+        rx.vstack(
+            rx.heading("My Projects", fontSize="3em", color="black"),
+        ),
         rx.flex(
+            rx.box(
+                rx.heading(
+                    rx.link(
+                        "OrganizeAI",
+                        href="/MailAI",
+                        color="black",
+                        marginRight="2em",
+                        marginBottom="0.5em",
+                    ),
+                    font_size="2em", marginBottom="0.5em"),
+                rx.text(
+                    "Use GSuite AI automation to streamline your business workflow.",
+                    font_size="1em",
+                    color="black",
+                    marginBottom="0.5em",
+                ),
+                rx.chakra.image(
+                src="/organizeAI.jpg",
+                width="40vw",
+                # height="200px",
+                # border_radius="full",
+                ),
+            ),
             rx.box(
                 rx.heading("QandA Market", font_size="2em", marginBottom="0.5em"),
                 rx.text(
@@ -16,19 +41,26 @@ def projects():
                     color="black",
                     marginBottom="0.5em",
                 ),
-                rx.list.unordered(
-                    rx.list.item("Developed a dynamic marketplace application utilizing the MERN stack, enabling experts across various domains to monetize their expertise through online consultations."),
-                    rx.list.item("Managed data storage and retrieval with MongoDB, ensuring robust and scalable database operations."),
-                    rx.list.item("Utilized Node.js with Express.js for backend development, efficiently managing URL routing and resource requests."),
-                    rx.list.item("Crafted an intuitive frontend user experience using React, integrating MUI for pleasing and consistent design elements."),
-                    rx.list.item("Enhanced application performance by integrating AWS S3 and CloudFront for image storage and retrieval, achieving a 50% reduction in user profile rendering time."),
-                    rx.list.item("Incorporated Stripe payments using their API with webhooks for real-time payment notifications and secure tokenizationv for card storage."),
+                rx.chakra.image(
+                src="/qandamarket.jpg",
+                width="50vw",
+                # height="200px",
+                # border_radius="full",
                 ),
-                rx.link(
-                    "qandamarket.com",
-                    href="qandamarket.com",  # Add your project link here
-                    target="_blank",
-                    color="blue",
+            ),
+            rx.box(
+                rx.heading("ChatVac", font_size="2em", marginBottom="0.5em"),
+                rx.text(
+                    "One place for all your messages.",
+                    font_size="1em",
+                    color="black",
+                    marginBottom="0.5em",
+                ),
+                rx.chakra.image(
+                src="/ChatVacMain.png",
+                width="50vw",
+                # height="200px",
+                # border_radius="full",
                 ),
             ),
             direction="column",
@@ -37,6 +69,7 @@ def projects():
             width="100%",
             height="100%",
             marginTop="2em",
+            gap="2em",
         ),
         padding="1em",
     )

@@ -9,9 +9,9 @@ def index():
         rx.flex(
             rx.heading(
                 "LUCCA PSAILA",
-                font_size="3em",
+                font_size="min(9vw, 60px)",
                 color="white",
-                letterSpacing= "15px",
+                letterSpacing= "min(2.5vw, 40px)",
                 fontWeight="500",
             ),
             rx.box(
@@ -19,9 +19,9 @@ def index():
             ),
             rx.text(
                 "Personal Portfolio",
-                font_size="1.5em",
+                font_size="min(5.5vw, 40px)",
                 color="white",
-                letterSpacing= "15px",
+                letterSpacing= "min(2vw, 18px)",
                 fontWeight="400",
             ),
             rx.box(
@@ -38,7 +38,7 @@ def index():
             align="center",
             width="100%",
             height="100%",
-            paddingTop="40vh",
+            paddingTop="50vh",
         ),
         background="center/cover url('/city.jpg')",
         width="100%",

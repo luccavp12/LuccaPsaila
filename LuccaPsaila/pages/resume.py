@@ -8,7 +8,7 @@ def resume():
     return rx.flex(
         rx.chakra.image(
             src="/resume.jpg",
-            width="50%",
+            width="min(100vw, 800px)",
             height="100%",
         ),
         rx.button(

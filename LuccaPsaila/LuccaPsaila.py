@@ -6,9 +6,13 @@ from .pages.index import index
 from .pages.resume import resume
 from .pages.projects import projects
 from .pages.mailai import mailai
+from .pages.qandamarket import qandamarket
+from .pages.chatvac import chatvac
 
 app = rx.App()
 app.add_page(index, route="/")
 app.add_page(resume, route="/resume")
 app.add_page(projects, route="/projects")
 app.add_page(mailai, route="/MailAI")
+app.add_page(qandamarket, route="/QandAMarket")
+app.add_page(chatvac, route="/ChatVac")
